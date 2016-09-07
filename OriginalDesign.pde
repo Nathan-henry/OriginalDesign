@@ -4,8 +4,14 @@ void setup()
 }
 void draw()
 {
-  ellipse(50,50,50,50);
+  int press = 0;
 }
-
-
+void button()
+{
+  
+}
+void mousePressed()
+{
+  press = press++;
+}
 
