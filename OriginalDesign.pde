@@ -1,38 +1,40 @@
 void setup()
 {
-  size(100,100);
+  size(500,500);
+ 
 }
+int press = 0;
+int pressCheck = 0;
+int textSize = 12;
+int moneyMade = 0;
+int reviewScore = 0;
+int startingPosition = 100;
+String text = "Make a Call of Duty game";
+int review color; //for a button that changes color as more things are added.
 void draw()
 {
-  int press = 0;
-  int pressCheck = 0;
-  int textSize = 12;
-  int moneyMade = 0;
-  int reviewScore = 0;
-  fill (255)
-  string text = "Make a call of Duty game"
+  fill (255);
   numCalculation();
-  button();
-  textSize (textSize)
-  text (text, 20, 10)
-}
-void button()
-{
-  if (pressCheck = 1);
+   if (pressCheck == 1)
   {
-    textSize++;
+    if (textSize < 32)
+    {
+      textSize++;
+      startingPosition= startingPosition - 5;
+    }
     pressCheck = 0;
   }
-}
-void numCalculaton()
-{
-  moneyMade = press * 4;
-  reviewScore = press *-2;
-  reviewScore = reviewScore +100
+  textSize (textSize);
+  text (text, startingPosition, 40);
 }
 void mousePressed()
 {
-  pressCheck= 1;
-  press = press++;
+    pressCheck= 1;
+    press = press++;
 }
-
+void numCalculation()
+{
+  moneyMade = press * 4;
+  reviewScore = press *-2;
+  reviewScore = reviewScore +100;
+}
