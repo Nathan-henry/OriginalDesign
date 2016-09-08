@@ -10,8 +10,13 @@ void button()
 {
   
 }
+void numCalculaton()
+{
+  
+}
 void mousePressed()
 {
+  oldPress = press;
   press = press++;
 }
 
