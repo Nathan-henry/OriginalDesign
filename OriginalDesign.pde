@@ -15,8 +15,9 @@ int cpy1;
 void draw()
 {
   fill (255);
+  rect (0,0, 500, 500);
+  fill (0);
   noStroke();
-  fill(255);
   clear();
   if (textSize < 32)
  {
