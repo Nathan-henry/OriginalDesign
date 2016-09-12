@@ -19,10 +19,6 @@ void draw()
   noFill()
   fill (0);
   noStroke();
-  if (textSize < 32)
- {
-    startingPosition= startingPosition - 5;
-  }
   textSize (textLarge);
   text (sentence, startingPosition, 40);
   textSize (18);
@@ -52,6 +48,10 @@ void mousePressed()
     }
     cpx1 = reviewColorA + 500;
     cpy1 = reviewColorB+ 500;
+    if (textSize < 32)
+ {
+    startingPosition= startingPosition - 5;
+  }
 }
 void button()
 {
