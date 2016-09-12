@@ -3,16 +3,18 @@ void setup()
   size(500,500);
  
 }
-int press = 0;
 int pressCheck = 0;
 int textSize = 12;
 int moneyMade = 1000;
-int num = 5000000;
+int num = 5000000; //test value
 int reviewScore = 100;
 int startingPosition = 100;
 String text = "Make a Call of Duty game";
-int reviewColorA = 255; //for a button that changes color as more things are added.
-int reviewColorB = 0;
+int reviewColorA = 255; //green value of the button
+int reviewColorB = 0; // red value of the button
+float cpx1; //named for control points
+float cpy1;
+float animator; //another test value
 void draw()
 {
   fill (255);
@@ -25,10 +27,6 @@ void draw()
     if (textSize < 32)
     {
       startingPosition= startingPosition - 5;
-    }
-    if (textSize < 72);
-    {
-      
     }
     textSize++;
     pressCheck = 0;
@@ -46,7 +44,6 @@ void draw()
 void mousePressed()
 {
     pressCheck= 1;
-    press = press++;
     reviewScore = reviewScore -2;
     moneyMade = moneyMade * 4;
     if (reviewScore < 80)
@@ -61,16 +58,31 @@ void mousePressed()
     {
      reviewColorB = reviewColorB + 16;
     }
+    cpx1 = reviewColorA + 500;
+    cpy1 = reviewColorB+ 500;
 }
 void button()
 {
   fill (reviewColorB, reviewColorA, 0);
   ellipse ( 200, 350, 100, 100);
+  snake();
   if (reviewColorB > 230
   )
   {
   fill (0);
   textSize(12);
+  ellipse (175, 325, 20, 20);
+  ellipse (225, 325, 20, 20);
+  stroke(15);
+  noFill();
+  arc (200, 370, 40, 40, PI, TWO_PI);
   text ("TRUE EVIL!", 200, 450);
   }
+}
+void snake() //didn't turn out to be a snake
+{
+  textSize(18);
+  text("happiness of consumer", 250, 200);
+  bezier (400, 200, cpx1, cpy1, 550, 400, 400, 400);
+  line (400, 200, 400, 400);
 }
