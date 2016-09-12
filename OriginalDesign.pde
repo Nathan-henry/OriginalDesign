@@ -66,8 +66,7 @@ void button()
   fill (reviewColorB, reviewColorA, 0);
   ellipse ( 200, 350, 100, 100);
   snake();
-  if (reviewColorB > 230
-  )
+  if (reviewColorB > 230)
   {
   fill (0);
   textSize(12);
