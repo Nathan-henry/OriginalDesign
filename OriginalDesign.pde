@@ -10,8 +10,8 @@ int startingPosition = 100;
 String text = "Make a Call of Duty game";
 int reviewColorA = 255; //green value of the button
 int reviewColorB = 0; // red value of the button
-float cpx1; //named for control points
-float cpy1;
+int cpx1; //named for control points
+int cpy1;
 void draw()
 {
   fill (255);
