@@ -20,8 +20,7 @@ void draw()
   fill (255);
   noStroke();
   fill(255);
-  rect (0, 0, 500, 500);
-  fill(0);
+  clear();
    if (pressCheck == 1)
   {
     if (textSize < 32)
