@@ -18,7 +18,6 @@ void draw()
   rect (0,0, 500, 500);
   fill (0);
   noStroke();
-  clear();
   if (textSize < 32)
  {
     startingPosition= startingPosition - 5;
