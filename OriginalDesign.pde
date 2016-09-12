@@ -23,7 +23,6 @@ void draw()
  {
     startingPosition= startingPosition - 5;
   }
-  textLarge++;
   textSize (textLarge);
   text (sentence, startingPosition, 40);
   textSize (18);
@@ -38,6 +37,7 @@ void mousePressed()
 {
     reviewScore = reviewScore -2;
     moneyMade = moneyMade * 4;
+    textLarge++;
     if (reviewScore < 80)
     {
      moneyMade = 999999999; 
