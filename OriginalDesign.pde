@@ -7,7 +7,7 @@ int textLarge = 12;
 int moneyMade = 1000;
 int reviewScore = 100;
 int startingPosition = 100;
-String text = "Make a Call of Duty game";
+String sentence = "Make a Call of Duty game";
 int reviewColorA = 255; //green value of the button
 int reviewColorB = 0; // red value of the button
 int cpx1; //named for control points
@@ -25,7 +25,7 @@ void draw()
   }
   textLarge++;
   textSize (textLarge);
-  text (text, startingPosition, 40);
+  text (sentence, startingPosition, 40);
   textSize (18);
   text ("It got rated", 100, 250);
   text (reviewScore, 200, 250);
