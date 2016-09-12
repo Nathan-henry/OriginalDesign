@@ -3,7 +3,7 @@ void setup()
   size(500,500);
  
 }
-int textSize = 12;
+int textLarge = 12;
 int moneyMade = 1000;
 int reviewScore = 100;
 int startingPosition = 100;
@@ -23,8 +23,8 @@ void draw()
  {
     startingPosition= startingPosition - 5;
   }
-  textSize++;
-  textSize (textSize);
+  textLarge++;
+  textSize (textLarge);
   text (text, startingPosition, 40);
   textSize (18);
   text ("It got rated", 100, 250);
