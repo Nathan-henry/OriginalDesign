@@ -16,6 +16,7 @@ void draw()
 {
   fill (255);
   rect (0,0, 500, 500);
+  noFill()
   fill (0);
   noStroke();
   if (textSize < 32)
