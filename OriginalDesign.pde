@@ -3,10 +3,8 @@ void setup()
   size(500,500);
  
 }
-int pressCheck = 0;
 int textSize = 12;
 int moneyMade = 1000;
-int num = 5000000; //test value
 int reviewScore = 100;
 int startingPosition = 100;
 String text = "Make a Call of Duty game";
@@ -14,22 +12,17 @@ int reviewColorA = 255; //green value of the button
 int reviewColorB = 0; // red value of the button
 float cpx1; //named for control points
 float cpy1;
-float animator; //another test value
 void draw()
 {
   fill (255);
   noStroke();
   fill(255);
   clear();
-   if (pressCheck == 1)
-  {
-    if (textSize < 32)
-    {
-      startingPosition= startingPosition - 5;
-    }
-    textSize++;
-    pressCheck = 0;
+  if (textSize < 32)
+ {
+    startingPosition= startingPosition - 5;
   }
+  textSize++;
   textSize (textSize);
   text (text, startingPosition, 40);
   textSize (18);
@@ -42,7 +35,6 @@ void draw()
 }
 void mousePressed()
 {
-    pressCheck= 1;
     reviewScore = reviewScore -2;
     moneyMade = moneyMade * 4;
     if (reviewScore < 80)
